@@ -89,7 +89,7 @@ echo $name;
                 <li>
                     <a class="active" href="index.html">
                         <i class="fa fa-dashboard"></i>
-                        <span>Tổng quanu</span>
+                        <span>Tổng quan</span>
                     </a>
                 </li>
                 
@@ -99,12 +99,11 @@ echo $name;
                         <span>Danh mục sản phẩm</span>
                     </a>
                     <ul class="sub">
-						<li><a href="typography.html">Thêm
-                        danh mục</a></li>
-						<li><a href="glyphicon.html">danh
-                        mục</a></li>
-                        <!-- <li><a href="grids.html">Grids</a></li> -->
-                    </ul>
+<li><a href="{{URL::to('/add-category-product')}}">Thêm danh mục sản
+phẩm</a></li>
+<li><a href="{{URL::to('/all-category-product')}}">Liệt kê danh mục sản
+phẩm</a></li>
+</ul>
                 </li>
                 
                 <li>

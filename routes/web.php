@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\CategoryProduct;
 Route::get('/','App\Http\Controllers\HomeController@index'); 
 
 Route::get('/trang-chu','App\Http\Controllers\HomeController@index');
@@ -19,6 +20,11 @@ Route::get('/product', function () {
     return view('pages.contact');
    });
    Route::get('/admin','App\Http\Controllers\AdminController@index');
-   Route::get('/dashboard','App\Http\Controllers\AdminController@show_dashboard');
+   Route::post('/dashboard','App\Http\Controllers\AdminController@show_dashboard');
    Route::post('/admin-dashboard','App\Http\Controllers\AdminController@dashboard');
    Route::get('/logout','App\Http\Controllers\AdminController@logout');
+
+   //Category Product
+Route::get('/add-category-product','App\Http\Controllers\CategoryProduct@add_category_product');
+Route::get('/all-category-product','App\Http\Controllers\CategoryProduct@all_category_product');
+Route::post('/save-category-product','CategoryProduct@save_category_product');
