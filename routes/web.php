@@ -32,3 +32,10 @@ Route::post('/save-category-product','CategoryProduct@save_category_product');
 //dislike
 Route::get('/unactive-categoryproduct/{category_product_id}','CategoryProduct@unactive_category_product');
 Route::get('/active-categoryproduct/{category_product_id}','CategoryProduct@active_category_product');
+
+//Brand Product
+Route::get('/add-brand-product','App\Http\Controllers\BrandProduct@add_brand_product');
+Route::get('/all-brand-product','App\Http\Controllers\BrandProduct@all_brand_product');
+Route::post('/save-brand-product','App\Http\Controllers\BrandProduct@save_brand_product');
+Route::get('/unactive-brandproduct/{brand_product_id}','App\Http\Controllers\BrandProduct@unactive_brand_product');
+Route::get('/active-brandproduct/{brand_product_id}','App\Http\Controllers\BrandProduct@active_brand_product');
