@@ -28,3 +28,7 @@ Route::get('/product', function () {
 Route::get('/add-category-product','App\Http\Controllers\CategoryProduct@add_category_product');
 Route::get('/all-category-product','App\Http\Controllers\CategoryProduct@all_category_product');
 Route::post('/save-category-product','CategoryProduct@save_category_product');
+
+//dislike
+Route::get('/unactive-categoryproduct/{category_product_id}','CategoryProduct@unactive_category_product');
+Route::get('/active-categoryproduct/{category_product_id}','CategoryProduct@active_category_product');
