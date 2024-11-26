@@ -3,11 +3,14 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use DB;
-use App\Brand;
-use Session;
-use App\Http\Requests;
+
+use App\Models\Brand;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Redirect;
+
+use App\Http\Requests;
+
 session_start();
 
 class BrandProduct extends Controller

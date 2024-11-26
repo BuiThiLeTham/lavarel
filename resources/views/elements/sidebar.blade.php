@@ -18,9 +18,7 @@
                             <h2>Thương hiệu sản phẩm</h2>
                             <div class="brands-name">
                                 <ul class="nav nav-pills nav-stacked">
-                                    @foreach($brand as $key => $brand)
-                                    <li><a href="{{URL::to('/thuong-hieu-san-pham/'.$brand->brand_slug)}}"> <span class="pull-right">(50)</span>{{$brand->brand_name}}</a></li>
-                                    @endforeach
+                               
                                 </ul>
                             </div>
                        <!--/brands_products-->

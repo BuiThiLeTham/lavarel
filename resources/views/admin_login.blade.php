@@ -31,12 +31,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="w3layouts-main">
 	<h2>Sign In Now</h2>
     <?php
-        $message = Session::get('message');
-        if($message){
-            echo '<span class="text-alert">'.$message.'</span>';
-        Session::put('message',null);
-    }
-    ?>
+if (session('message')) {
+    echo '<span class="text-alert">' . session('message') . '</span>';
+    session()->forget('message'); // Xóa thông báo sau khi hiển thị
+}
+?>
+
     <form action="{{('/admin-dashboard')}}" method="post">
         {{ csrf_field() }}
         <input type="text" class="ggg" name="admin_email" placeholder="nhập E-MAIL" required="">
