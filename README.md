@@ -76,3 +76,7 @@ B7: Chạy lệnh sau:
 Lệnh này sẽ khởi động một server phát triển và bạn có thể truy cập ứng dụng Laravel của mình tại http://localhost:8000 hoặc một địa chỉ khác tùy thuộc vào cổng mà server đang sử dụng.
 
 B8: Mở trình duyệt, dán http://localhost:8000/
+
+http://localhost:8000/admin để đăng nhập
+email: admin@gmail.com
+pass: 123456
