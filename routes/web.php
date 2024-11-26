@@ -39,3 +39,7 @@ Route::get('/all-brand-product','App\Http\Controllers\BrandProduct@all_brand_pro
 Route::post('/save-brand-product','App\Http\Controllers\BrandProduct@save_brand_product');
 Route::get('/unactive-brandproduct/{brand_product_id}','App\Http\Controllers\BrandProduct@unactive_brand_product');
 Route::get('/active-brandproduct/{brand_product_id}','App\Http\Controllers\BrandProduct@active_brand_product');
+
+Route::get('/edit-brandproduct/{brand_product_id}','BrandProduct@edit_brand_product');
+Route::post('/update-brandproduct/{brand_product_id}','BrandProduct@update_brand_product');
+Route::get('/delete-brandproduct/{brand_product_id}','BrandProduct@delete_brand_product');
