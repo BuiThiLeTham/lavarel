@@ -112,7 +112,12 @@ class BrandProduct extends Controller
 
         $brand_name = DB::table('tbl_brand')->where('tbl_brand.brand_slug',$brand_slug)->limit(1)->get();
 
-        return view('pages.brand.show_brand')->with('category',$cate_product)->with('brand',$brand_product)->with('brand_by_id',$brand_by_id)->with('brand_name',$brand_name);
-    }
+        return view('pages.brand.show_brand')
+    ->with('category', $cate_product)
+    ->with('brand_product', $brand_product)
+    ->with('brand_by_id', $brand_by_id)
+    ->with('brand_name', $brand_name);
+
+         }
 
 }
