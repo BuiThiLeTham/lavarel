@@ -70,7 +70,6 @@ echo $name;
             <ul class="dropdown-menu extended logout">
                 <li><a href="#"><i class=" fa fa-suitcase"></i>Cá nhân</a></li>
                 <li><a href="#"><i class="fa fa-cog"></i> Cài đặt</a></li>
-                <li><a href="login.html"><i class="fa fa-key"></i> Đăng xuất</a></li>
                 <li><a href="{{URL::to('/logout')}}"><i class="fa fa-key"></i> Đăng xuất</a></li>
             </ul>
         </li>
